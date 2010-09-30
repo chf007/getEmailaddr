@@ -1,9 +1,10 @@
 <?php
 /*
-用来获取页面上的E-amil地址
-version: 1.0.1
-author: Scarecrow chf007server@gmail.com 2010/3/1 15:18
-*/
+ * 用来获取页面上的E-amil地址
+ * version: 1.0.1
+ * author: Scarecrow chf007server@gmail.com 2010/3/1 15:18
+ *
+ */
 
 $time_start = getmicrotime();
 
@@ -166,12 +167,12 @@ preg_match_all('/[\w.%-]+@[\w.-]+\.[a-z]{2,4}/i', $contents, $emailaddr);
 			$("#usage").click(function(){
 				$("#nav_update").hide();
 				$("#nav_usage").slideToggle("slow");
-				
+
 			});
 			$("#update").click(function(){
 				$("#nav_usage").hide();
 				$("#nav_update").slideToggle("slow");
-				
+
 			});
 		});
 //        $(function(){
